@@ -24,5 +24,15 @@ public class TesteImpostoRenda{
 		float result = cdb.getImposto();
 		assertEquals(result, cdb.getImposto(), 0.01);	
 	}
+	
+	@Test
+	public void testGetImpostoImpostoRenda2() {
+		cdb.qtDias=90;
+		cdb.rendBruto=20;
+		float result = cdb.getImposto();
+		assertEquals(result, cdb.getImposto(), 0.01);	
+	}
+	
+
 
 }
