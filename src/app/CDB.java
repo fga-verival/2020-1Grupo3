@@ -25,9 +25,27 @@ public class CDB {
 	}
 
 	public float getImposto() {
+		float aliquota = 0;
 		
-		return 3.14f;
-	
+		if(this.qtDias<=180) {
+			aliquota = 22.5f;		
+		}
+		
+		else if(this.qtDias>180 && this.qtDias<=360) {
+			aliquota= 20f;
+		}
+		
+		else if(this.qtDias>360 && this.qtDias<=720) {
+			aliquota = 17.5f;
+		}
+		else  {
+			aliquota = 15f;
+		}
+		
+		return (this.rendBruto * aliquota) / 100;
+
+
+		
 	}
 	
 	
