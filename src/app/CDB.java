@@ -1,13 +1,15 @@
 package app;
 
-
 public class CDB {
+
 	private int  qtDias;
+	private float aplicacaoInicial;
 	private float rendBruto;
-	
-	
 
 	public float redimentoBruto(int dias, float aplicacaoInicial, float txAnual) {
+		this.qtDias = dias;
+		this.aplicacaoInicial = aplicacaoInicial;
+		
 		float tx = txAnual/100f;
 		float ano = dias/365f;
 		
@@ -19,7 +21,6 @@ public class CDB {
 		total = total/100f;
 		
 		this.rendBruto = total;
-		this.qtDias = dias;
 
 		return total;
 	}
@@ -43,11 +44,9 @@ public class CDB {
 		}
 		
 		return (this.rendBruto * aliquota) / 100;
-
-
-		
 	}
-	
-	
-	 
+
+	public float calcularRendimentoLiquido() {
+		return 0;
+	}
 }
