@@ -20,4 +20,10 @@ public class TesteCalculoRendimentoBruto{
     	float val = cdb.redimentoBruto(60, 1000f, 8.5f);
         assertEquals(13.97f, val, 0); 
     }
+    
+    @Test
+    public void testeCalculoRendimento2(){
+    	float val = cdb.redimentoBruto(120, 500f, 8f);
+        assertEquals(13.15f, val, 0); 
+    }
 }
