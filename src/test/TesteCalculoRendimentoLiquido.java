@@ -29,4 +29,10 @@ public class TesteCalculoRendimentoLiquido {
 		cdb.redimentoBruto(670, 800f, 8.0f);
 		assertEquals(12.115f, cdb.calcularRendimentoLiquido(), 0);
 	}
+	
+	@Test
+	public void testCalcularRendimentoLiquido3() {
+		cdb.redimentoBruto(700, 2500f, 9.0f);
+		assertEquals(14.239f, cdb.calcularRendimentoLiquido(), 0);
+	}
 }
