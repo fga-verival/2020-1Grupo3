@@ -28,15 +28,15 @@ public class CDB {
 	public float getImposto() {
 		float aliquota = 0;
 		
-		if(this.qtDias<=180) {
+		if (this.qtDias<=180) {
 			aliquota = 22.5f;		
 		}
 		
-		else if(this.qtDias>180 && this.qtDias<=360) {
+		else if (this.qtDias>180 && this.qtDias<=360) {
 			aliquota= 20f;
 		}
 		
-		else if(this.qtDias>360 && this.qtDias<=720) {
+		else if (this.qtDias>360 && this.qtDias<=720) {
 			aliquota = 17.5f;
 		}
 		else  {
@@ -47,6 +47,6 @@ public class CDB {
 	}
 
 	public float calcularRendimentoLiquido() {
-		return 9.945f;
+		return 9.945f; // falsificação
 	}
 }
