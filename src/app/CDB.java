@@ -24,8 +24,11 @@ public class CDB {
 		return total;
 	}
 
+	public float getImposto() {
+		
+		return 3.14f;
 	
-	
+	}
 	
 	
 	 
