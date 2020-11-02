@@ -28,7 +28,7 @@ public class TesteCalculoRendimentoBruto{
     }
     
     @Test
-    public void testeCalculoRendimento2(){
+    public void testeCalculoRendimento3(){
     	float val = cdb.redimentoBruto(240, 3000f, 9f);
         assertEquals(177.53f, val, 0); 
     }

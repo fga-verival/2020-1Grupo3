@@ -1,8 +1,12 @@
 package app;
-import java.lang.Math;
-import java.text.DecimalFormat;
+
 
 public class CDB {
+	private int  qtDias;
+	private float rendBruto;
+	
+	
+
 	public float redimentoBruto(int dias, float aplicacaoInicial, float txAnual) {
 		float tx = txAnual/100f;
 		float ano = dias/365f;
@@ -14,7 +18,15 @@ public class CDB {
 		total = (int) (total*100f);
 		total = total/100f;
 		
-		System.out.println(total);
+		this.rendBruto = total;
+		this.qtDias = dias;
+
 		return total;
 	}
+
+	
+	
+	
+	
+	 
 }
