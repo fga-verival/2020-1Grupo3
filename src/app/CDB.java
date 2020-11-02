@@ -47,6 +47,23 @@ public class CDB {
 	}
 
 	public float calcularRendimentoLiquido() {
-		return 9.945f; // falsificação
+		// return 9.945f; // falsificação
+		
+		float rendimentoBruto = this.rendBruto;
+		
+		float impostoRenda = this.getImposto();
+		impostoRenda = (int) (impostoRenda*100f);
+		impostoRenda = impostoRenda/100f;
+		
+		float capitalInicial = this.aplicacaoInicial;
+		
+		float resultadoFinal = rendimentoBruto - impostoRenda + capitalInicial;
+		
+		float aux = resultadoFinal / capitalInicial;
+		float rendimentoLiquido = aux * 100f - 100;
+		rendimentoLiquido = (int) (rendimentoLiquido*1000f);
+		rendimentoLiquido = rendimentoLiquido/1000f;
+
+		return rendimentoLiquido;
 	}
 }
