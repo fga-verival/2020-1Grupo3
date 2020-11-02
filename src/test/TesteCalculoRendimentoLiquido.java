@@ -1,6 +1,6 @@
 package test;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
 
 import org.junit.Before;
 import org.junit.Test;
@@ -18,7 +18,9 @@ public class TesteCalculoRendimentoLiquido {
 	
 	@Test
 	public void testCalcularRendimentoLiquido() {
-		fail("Not yet implemented");
-	}
+		// fail("Not yet implemented");
 
+		cdb.redimentoBruto(550, 400f, 8.0f);
+		assertEquals(9.945f, cdb.calcularRendimentoLiquido(), 0);
+	}
 }
